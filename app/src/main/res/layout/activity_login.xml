@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    >
+    <!--qais-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_log"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geekfilm"
+            android:textColor="#ffff"
+            android:fontFamily="cursive"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="@dimen/logo_w_h"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/logofinal"
+
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="2dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:background="@drawable/ed"/>
+
+
+
+
+            <EditText
+                android:id="@+id/password"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:drawablePadding="2dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_password"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ed"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#000000" />
+
+
+            <Button
+                android:id="@+id/btn_signup"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bh"
+                android:text="sign up"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_reset_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@null"
+                android:text="@string/btn_forgot_password"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent" />
+
+            <!-- Link to Login Screen -->
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@null"
+                android:text="@string/btn_link_to_login"
+                android:textAllCaps="false"
+                android:textColor="?attr/textcolor"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnskip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="SKIP"
+                android:textColor="@color/black"
+                android:layout_gravity="bottom|end"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

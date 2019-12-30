@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+<TextView
+    android:paddingLeft="10dp"
+    android:paddingTop="15sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="16dp"
+    android:fontFamily="serif"
+    android:text="Application name:\t GeekFilm\n\n\n
+Description: an application where you can see\n
+ a list of movies and tv shows\n
+\nMembers:\n\n
+	1.Ahmad Albatsh\n
+	2.Qais Alkharabsheh\n
+\n\n
+Emails:\n\n
+	1. ahmad.rashid.albatch@gmail.com\n
+	2. qaisas49@hotmail.com\n
+"/>
+
+<ImageView
+    android:layout_width="150sp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:src="@drawable/logofinal"
+    />
+</LinearLayout>
